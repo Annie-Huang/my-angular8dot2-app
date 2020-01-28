@@ -14,7 +14,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "run-s prettier:prehook lint"
+      "pre-commit1": "run-s prettier:prehook lint"
     }
   },
   "private": true,
