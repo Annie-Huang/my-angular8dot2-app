@@ -15,8 +15,11 @@
   "husky": {
     "hooks": {
       "pre-commit1": "run-s prettier:prehook lint",
-      "pre-commit": "lint-staged"
+      "pre-commit2": "lint-staged"
     }
+  },
+  "lint-staged": {
+    "**/*.{ts,tsx,js,scss,html}": "prettier --write"
   },
   "private": true,
   "dependencies": {
@@ -57,8 +60,5 @@
     "ts-node": "~7.0.0",
     "tslint": "~5.15.0",
     "typescript": "~3.5.3"
-  },
-  "lint-staged": {
-    "*.{js,css,md}": "prettier --write"
   }
 }
