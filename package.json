@@ -7,7 +7,15 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "prettier:check": "prettier --check \"**/*.{ts,js,scss, html}\"",
+    "prettier:write:wholesystem": "prettier --write \"**/*.{ts,tsx,js,scss,html}\"",
+    "prettier:prehook": "pretty-quick --staged --pattern \"**/*.{ts,js,scss,html}\""
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "run-s prettier:prehook lint"
+    }
   },
   "private": true,
   "dependencies": {
