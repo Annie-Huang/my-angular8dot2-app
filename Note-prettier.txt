@@ -57,4 +57,5 @@ And you don't install npm-run-all if we want both prettier and lint run together
 
 
 BOTH SOLUTIONS ARE OK!!!
-
+So we don't need to use nx's format:fix for this??
+      << Or you can test whether it does for stage files only and if yes, then use it. I would say it's better use prettier-quick or lint-staged

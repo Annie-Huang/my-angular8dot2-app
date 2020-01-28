@@ -4,5 +4,40 @@
 
 
 4. Do we want to run prettier with lint in git hook? Or just prettier?
+   If we want lint as well, I will add "nx affected:lint" into the hook.
+
+
+Demo:
+-----------
+Major different in SCSS prettier:
+&:before, &:after {
+  background-color: red;
+}
+becomes:
+&::before,
+&::after {
+  background-color: red;
+}
+
+Major different in
+trailingComma for objects, arrays, functions
+https://prettier.io/docs/en/options.html
+
+
+Demo:
+------------
+(https://prettier.io/docs/en/webstorm.html)
+
+Intellij plugin for prettier.
+
+Normal reformat according to prettier on the current file is:
+Alt-Shift-Cmd-P on macOS or Alt-Shift-Ctrl-P on Windows
+
+Intellij watcher: Intellij >> Settings >> Tools >> File Watchers >> + >> Prettier
+>> Add all the files types (Javascript, TypeScript, Cascading Style Sheet, SCSS Style Sheet, HTML) one by one | Choose Any (a bit risky to choose Any)
+>> Then Go back for a unformatted file (e.g. a html file), as soon as you make a change, file watcher will auto reformatted.
+
+
+
 
 
