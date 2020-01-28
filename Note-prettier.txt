@@ -38,3 +38,23 @@ testCheckInfile1.html     unformatted (untouched)   unstaged        new
 
 Conclusion: pretty-quick is already doing what we want.
 But we will need to install npm-run-all if we want both prettier and lint run together.
+
+
+lint-staged test Scenario:
+---------------------------------------
+Scenario 1:
+app.module.ts file:       unformatted               staged          existing
+testCheckInFile.html:     unformatted               unstaged        existing
+testCheckInFile1.html:    unformatted               unstaged        new
+Result:
+app.module.ts:            formatted                 committed       existing
+testCheckInFile.html:     unformatted               unstaged        existing
+testCheckInfile1.html     unformatted (untouched)   unstaged        new
+
+Conclusion: lint-staged does the same result as pretty-quick.
+And you don't install npm-run-all if we want both prettier and lint run together.
+
+
+
+BOTH SOLUTIONS ARE OK!!!
+
