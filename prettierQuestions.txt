@@ -1,0 +1,8 @@
+1. Do we want to run prettier against .html, .ts, .scss, .css file?
+2. Do we want to run prettier against JSON file?
+3. Do we want to run prettier in all other files directory (inclulding root) for all the other files. e.g. sh, gulp file etc.
+
+
+4. Do we want to run prettier with lint in git hook? Or just prettier?
+
+
