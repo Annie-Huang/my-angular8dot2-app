@@ -59,3 +59,49 @@ And you don't install npm-run-all if we want both prettier and lint run together
 BOTH SOLUTIONS ARE OK!!!
 So we don't need to use nx's format:fix for this??
       << Or you can test whether it does for stage files only and if yes, then use it. I would say it's better use prettier-quick or lint-staged
+
+
+
+http://json.schemastore.org/prettierrc:
+------------------
+        "htmlWhitespaceSensitivity": {
+          "description": "How to handle whitespaces in HTML.",
+          "default": "css",
+          "oneOf": [
+            {
+              "enum": ["css"],
+              "description": "Respect the default value of CSS display property."
+            },
+            {
+              "enum": ["strict"],
+              "description": "Whitespaces are considered sensitive."
+            },
+            {
+              "enum": ["ignore"],
+              "description": "Whitespaces are considered insensitive."
+            }
+          ]
+        },
+        "parser": {
+          "description": "Which parser to use.",
+          "oneOf": [
+            { "enum": ["flow"], "description": "Flow" },
+            { "enum": ["babel"], "description": "JavaScript" },
+            { "enum": ["babel-flow"], "description": "Flow" },
+            { "enum": ["typescript"], "description": "TypeScript" },
+            { "enum": ["css"], "description": "CSS" },
+            { "enum": ["less"], "description": "Less" },
+            { "enum": ["scss"], "description": "SCSS" },
+            { "enum": ["json"], "description": "JSON" },
+            { "enum": ["json5"], "description": "JSON5" },
+            { "enum": ["json-stringify"], "description": "JSON.stringify" },
+            { "enum": ["graphql"], "description": "GraphQL" },
+            { "enum": ["markdown"], "description": "Markdown" },
+            { "enum": ["mdx"], "description": "MDX" },
+            { "enum": ["vue"], "description": "Vue" },
+            { "enum": ["yaml"], "description": "YAML" },
+            { "enum": ["html"], "description": "HTML" },
+            { "enum": ["angular"], "description": "Angular" },
+            { "enum": ["lwc"], "description": "Lightning Web Components" }
+          ]
+        },
