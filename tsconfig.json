@@ -19,10 +19,10 @@
       "dom"
     ],
     "paths": {
-      "ea-ui": [
+      "@ea/ea-ui": [
         "dist/ea-ui"
       ],
-      "ea-ui/*": [
+      "@ea/ea-ui/*": [
         "dist/ea-ui/*"
       ]
     }
