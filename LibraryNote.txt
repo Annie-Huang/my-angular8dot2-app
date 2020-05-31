@@ -1,4 +1,8 @@
 
+https://medium.com/better-programming/how-to-fix-your-angular-app-when-its-not-working-in-ie11-eb24cb6d9920
+https://stackoverflow.com/questions/35140718/angular-2-4-5-not-working-in-ie11
+
+==============================================================
 
 C:\Temp\my-angular8dot2-app>npm run build-lib
-
+C:\Temp\my-angular8dot2-app>npm run start
